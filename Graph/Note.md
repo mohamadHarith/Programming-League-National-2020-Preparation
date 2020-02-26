@@ -4,5 +4,5 @@ Graphs are useful in modeling and solving real-world problems. For example, the 
 
 The study of graph problems is known as the /*graph theory*/. Graph theory was founded by Leonhard Eurler in 1736, when he introduced graph terminology to solve the famous /*Seven Bridges of Konigsberg*/ problem. The city of Konisberg, Prussia (now Kaliningrad, Russia) was divided by the Pregel River. There were two islands on the river.  
 
-![Konigsberg Bridge](Graph/KonigsbergBridge.png)
+![Konigsberg Bridge](KonigsbergBridge.png)
 
