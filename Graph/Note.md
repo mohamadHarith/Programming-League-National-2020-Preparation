@@ -83,7 +83,11 @@ You can represent a graph using an adjacency matrix or adjacency lists. Which on
 The depth first search of a graph starts from a vertex in the graph and visits all vertices in the graph as far as possible before backtracking.  
 The search is called *depth-first* because it searches 'deeper' in the graph as much as possible. After visiting v, it visits an unvisited neighbour of v. If v has no unvisited neighbour, the search backtracks to the vertex from which it reached v.  
 
-Algorithm:- 
+Algorithm:-  
+```
+Input: G=(V, E) and a starting vertex v
+Output: a DFS tree rooted at V
+```
 
 
 

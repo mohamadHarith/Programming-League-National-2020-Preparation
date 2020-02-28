@@ -22,7 +22,7 @@ public interface Graph<V>{
 
     public boolean addEdge(int u, int v);
 
-    // public AbstractGraph<V>.Tree dfs(int v);
+    public AbstractGraph<V>.Tree dfs(int v);
 
     // public AbstractGraph<V>.Tree bfs(int v);
 }
