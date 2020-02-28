@@ -17,19 +17,19 @@ Graph problems are often solven using algorithms. Graph algorithms have many app
 **Undirected graph** - In an undirected graph, you can move in both directions between vertices.  
 **Weighted graph** - Edges of a graph may have weights that indicates a meaningful value suchs as the flight time between the two cities.  
 **Unweighted graph** - Edges of a graph without weights.  
-**Adjacent vertices**
-**Incident edges**
-**Degree**
-**Neighbour**
-**Loop**
-**Parallel edge**
-**Simple graph**
-**Complete graph**
-**Connected graph**
-**Subgraph**
-**Cycle**
-**Tree**
-**Spanning tree**
+**Adjacent vertices**  
+**Incident edges**  
+**Degree**  
+**Neighbour**  
+**Loop**  
+**Parallel edge**  
+**Simple graph**  
+**Complete graph**  
+**Connected graph**  
+**Subgraph**  
+**Cycle**  
+**Tree**  
+**Spanning tree**  
 
 
 ## Representing Graphs  
@@ -83,10 +83,23 @@ You can represent a graph using an adjacency matrix or adjacency lists. Which on
 The depth first search of a graph starts from a vertex in the graph and visits all vertices in the graph as far as possible before backtracking.  
 The search is called *depth-first* because it searches 'deeper' in the graph as much as possible. After visiting v, it visits an unvisited neighbour of v. If v has no unvisited neighbour, the search backtracks to the vertex from which it reached v.  
 
-Algorithm:-  
+**DFS Implementation**  
+DFS can be implemented using recursion or stack.
+
+Algorithm (recursive approach):-  
+
 ```
 Input: G=(V, E) and a starting vertex v
 Output: a DFS tree rooted at V
+
+Tree dfs(vertex v){
+    visit v;
+    for each neighbour w of v
+        if(w has not been visited){
+            set v as the parent for w in the tree;
+            dfs(w);
+        }
+}
 ```
 
 
