@@ -3,11 +3,12 @@
 import java.util.*;
 import java.io.*;
 
+
 class Factorial {
     
-    private static int fact(int n){
+    private static Long fact(Long n){
         if(n == 0){
-            return 1;
+            return 1L;
         }
         else{
             return n*fact(n-1);
@@ -20,10 +21,10 @@ class Factorial {
         
         final int numberOfTestCases = scanner.nextInt();
         
-        ArrayList<Integer>testcases = new ArrayList<>();
+        ArrayList<Long>testcases = new ArrayList<>();
         
         for(int i=0; i<numberOfTestCases; i++){
-           testcases.add(scanner.nextInt());
+           testcases.add(scanner.nextLong());
         }
 
         for(int i=0; i<testcases.size();i++){

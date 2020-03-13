@@ -26,7 +26,7 @@ class Fibonacci {
         }
 
         for(int i=0; i<testcases.size();i++){
-            System.out.println(fib(testcases.get(i)));
+            System.out.println(fib(testcases.get(i))%1000000007);
         }
 	}
 }
